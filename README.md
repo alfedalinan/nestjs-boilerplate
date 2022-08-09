@@ -38,13 +38,14 @@ Template using NestJS framework and TypeORM library
 ├─ Dockerfile
 ├─ nest-cli.json
 ├─ package.json
-├─ .env                                  # environment file
+├─ .env.template                         # environment template file
 └─ tsconfig.json                         # TypeScript config
 ```
 
 ### Setup
 
 - Install all dependencies using `npm install`
+- Create a copy of environment file by running `cp .env.template .env` and set up accordingly
 - Run command `docker compose up -d` to initialize database locally
 - Start the application using the command `npm start`
 - To run in dev mode, you may use the command `npm run start:dev`
